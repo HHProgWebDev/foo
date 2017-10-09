@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <title>Stórt verkefni 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab"
+      rel="stylesheet">
+    <!--
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="styles.css">
+    -->
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="per-info">
+            <h2>Persónuupplýsingar</h2>
+            <div>
+              <label for="nafn">Nafn:</label>
+              <input type="text" name="nafn" id="nafn" required>
+            </div>
+            <div>
+              <label for="kennit">Kennitala:</label>
+              <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
+                id="kennit" required autofocus placeholder="123456-7890">
+            </div>
+            <div>
+            <p>Kyn:</p>
+              <label>
+                <input type="radio" name="kyn" value="F"> Kona
+              </label>
+              <label>
+                <input type="radio" name="kyn" value="M"> Maður
+              </label>
+              <label>
+                <input type="radio" name="kyn" value="A"> Annað
+              </label>
+            </div>
+            <div>
+              <label for="simi">Sími:</label>
+              <!-- laga pattern-->
+              <input type="text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
+                id="simi" autofocus placeholder="+354 812 3456">
+            </div>
+            <div>
+              <label for="heimfang">Heimilisfang:</label>
+              <input type="text" name="heimfang" id="heimfang">
+            </div>
+            <div>
+              <label>
+              <input type="checkbox" name="postlisti" checked> Skrá mig á
+                póstlista
+              </label>
+            </div>
+
+        </div>
+        <div class="gre-info">
+          <h2>Greiðsluupplýsingar</h2>
+          <div>
+            <label for="pay-method">Greiða með:</label>
+            <select name="pay-method" id="pay-method" required>
+              <option>Kreditkorti</option>
+              <option>Millifærslu</option>
+              <option>Reiðufé</option>
+            </select>
+          </div>
+          <div>
+            <label for="card-name">Nafn á korti:</label>
+            <input type="text" name="card-name" id="card-name" required>
+          </div>
+          <div>
+            <label for="card-number">Kortanúmer:</label>
+            <!-- laga pattern-->
+            <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}"
+              name="card-number" id="card-number" required
+              autofocus placeholder="5000-9999-9999-9999">
+          </div>
+          <div>
+            <p>Gildistími:</p>
+            <label for="exp-month">Mán</label>
+            <select name="exp-month" id="exp-month">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="exp-year">Ár</label>
+            <select name="exp-year" id="exp-year">
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </div>
+        </div>
+        <button>Panta</button>
+      </form>
+
+    </main>
+  </body>
+</html>
