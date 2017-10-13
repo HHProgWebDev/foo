@@ -10,3 +10,12 @@ html {
   /* fjarlægjum margin og padding */
   padding: 0;
   margin: 0; }
+
+
+@import "scss/button";
+@import "scss/bullet";
+@import "scss/grid";
+@import "scss/form";
+@import "scss/heading";
+@import "scss/review";
+@import "scss/text";
