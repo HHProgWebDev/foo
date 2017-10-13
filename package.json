@@ -4,10 +4,9 @@
   "description": "Stora verkefni 1 í vefforritun 2017",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync start --server --files index.html kaupa.html kaupa.css styles.css",
-    "sass1": "node-sass styles.scss styles.css -w",
-    "sass2": "node-sass kaupa.scss kaupa.css -w",
-    "dev": "npm-run-all --parallel sass1 sass2 browser-sync",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "node-sass styles.scss styles.css -w",
+    "dev": "npm-run-all --parallel sass  browser-sync",
     "lint": "stylelint *.scss scss/*.scss --syntax scss"
   },
   "author": "",
