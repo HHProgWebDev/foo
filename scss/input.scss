@@ -8,8 +8,15 @@
   }
 }
 
+.input--text {
+
+  input {
+    padding: 0.3em 0 0.3em 0.2em;
+  }
+}
+
 .input--radio {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0 6px;
   margin: 10px 0 0;
@@ -46,5 +53,10 @@
     display: block;
     background: #999;
   }
+}
 
+.input--select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

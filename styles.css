@@ -22,6 +22,28 @@ html {
     html {
       margin: 0; } }
 
+.button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  border: 1px solid transparent;
+  text-decoration: none; }
+
+.button--small {
+  padding: 0.8em 1em 0.8em 1em;
+  margin: 0 auto 5em auto; }
+
+.button--wide {
+  padding: 0.5em 2em 0.5em 2em;
+  margin: 0 auto 5em auto; }
+
+.button--order-page {
+  padding: 0.8em 8em 0.8em 8em;
+  margin: 0 auto 5em auto; }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -99,8 +121,11 @@ html {
     -ms-border-radius: 3px;
     border-radius: 3px; }
 
+.input--text input {
+  padding: 0.3em 0 0.3em 0.2em; }
+
 .input--radio {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0 6px;
   margin: 10px 0 0; }
@@ -129,3 +154,8 @@ html {
     content: " ";
     display: block;
     background: #999; }
+
+.input--select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }

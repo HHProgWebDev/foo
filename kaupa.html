@@ -22,11 +22,11 @@
           <div class="row">
             <div class="col col-4 offset-1">
               <h3 class="heading heading--three">Persónuupplýsingar</h3>
-              <div class="input">
+              <div class="input input--text">
                 <label for="nafn">Nafn:</label>
                 <input type="text" name="nafn" id="nafn" required>
               </div>
-              <div class="input">
+              <div class="input input--text">
                 <label for="kennit">Kennitala:</label>
                 <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
                   id="kennit" required autofocus placeholder="123456-7890">
@@ -46,13 +46,13 @@
                   <label for="kynA">Annað</label>
                 </div>
               </div>
-              <div class="input">
+              <div class="input input--text">
                 <label for="simi">Sími:</label>
                 <!-- laga pattern-->
                 <input type="text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
                   id="simi" autofocus placeholder="+354 812 3456">
               </div>
-              <div class="input">
+              <div class="input input--text">
                 <label for="heimfang">Heimilisfang:</label>
                 <input type="text" name="heimfang" id="heimfang">
               </div>
@@ -66,27 +66,27 @@
 
             <div class="col col-4 offset-1">
               <h3 class="heading heading--three">Greiðsluupplýsingar</h3>
+              <p>Greiða með:</p>
               <div class="input input--select">
-                <label for="pay-method">Greiða með:</label>
                 <select name="pay-method" id="pay-method" required>
                   <option>Kreditkorti</option>
                   <option>Millifærslu</option>
                   <option>Reiðufé</option>
                 </select>
               </div>
-              <div class="input">
+              <div class="input input--text">
                 <label for="card-name">Nafn á korti:</label>
                 <input type="text" name="card-name" id="card-name" required>
               </div>
-              <div class="input">
+              <div class="input input--text">
                 <label for="card-number">Kortanúmer:</label>
                 <!-- laga pattern-->
                 <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}"
                   name="card-number" id="card-number" required
-                  autofocus placeholder="5000-9999-9999-9999">
+                  autofocus placeholder="5999-9999-9999-9999">
               </div>
+              <p>Gildistími:</p>
               <div class="input input--select">
-                <p>Gildistími:</p>
                 <label for="exp-month">Mán</label>
                 <select name="exp-month" id="exp-month">
                   <option value="01">01</option>
@@ -115,7 +115,7 @@
             </div>
           </div>
           <div class="row">
-            <button>Panta</button>
+            <button class="button button--order-page">Panta</button>
           </div>
         </form>
       </section>
