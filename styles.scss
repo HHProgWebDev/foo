@@ -4,10 +4,18 @@
 $max-width: 1200px;
 $gutter: 20px;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
   /* stylelint-disable-line */
@@ -39,3 +47,4 @@ html {
 @import "scss/heading";
 @import "scss/review";
 @import "scss/text";
+@import "scss/input";
