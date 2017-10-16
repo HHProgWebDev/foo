@@ -13,14 +13,17 @@ html {
 
 html {
   /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 0;
+  margin-left: 0;
   font-family: Lato, helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
     html {
       margin: 0; } }
+
+body {
+  margin: 0; }
 
 .button {
   -webkit-border-radius: 4px;
@@ -33,6 +36,10 @@ html {
   text-decoration: none; }
 
 .button--small {
+  padding: 0.8em 1em 0.8em 1em;
+  margin: 0 auto 5em auto; }
+
+.button--medium {
   padding: 0.8em 1em 0.8em 1em;
   margin: 0 auto 5em auto; }
 
@@ -110,6 +117,18 @@ html {
     .col-sm-12 {
       width: 100%; } }
 
+.navbar {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-decoration: none; }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
 .input {
   display: flex;
   flex-direction: column;
@@ -159,3 +178,9 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+footer {
+  background-color: #333;
+  color: #fff; }
+  footer .copyright {
+    text-align: center; }
