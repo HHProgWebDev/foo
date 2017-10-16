@@ -31,17 +31,20 @@
                 <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
                   id="kennit" required autofocus placeholder="123456-7890">
               </div>
-              <div class="input input--radio">
+              <div>
                 <p>Kyn:</p>
-                <label>
-                  <input type="radio" name="kyn" value="F"> Kona
-                </label>
-                <label>
-                  <input type="radio" name="kyn" value="M"> Maður
-                </label>
-                <label>
-                  <input type="radio" name="kyn" value="A"> Annað
-                </label>
+                <div class="input input--radio">
+                  <input type="radio" id="kynF" name="kyn" value="F">
+                  <label for="kynF">Kona</label>
+                </div>
+                <div class="input input--radio">
+                  <input type="radio" id="kynM" name="kyn" value="M">
+                  <label for="kynM">Karl</label>
+                </div>
+                <div class="input input--radio">
+                  <input type="radio" id="kynA" name="kyn" value="A">
+                  <label for="kynA">Annað</label>
+                </div>
               </div>
               <div class="input">
                 <label for="simi">Sími:</label>
