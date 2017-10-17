@@ -1,3 +1,11 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
 .button {
   display: inline-block;
 
@@ -19,16 +27,25 @@
 
   cursor: pointer;
 
-  background-color: #666;
+  background-color: #777;
 
-  border: 1px solid #666;
-  border-radius: 4px;
+  border: 1px solid #777;
+  @include border-radius(4px);
 
   transition: background-color 500ms ease;
 
   &--small {
     padding: 4px 8px;
     display: inline;
+  }
+
+  &--wide {
+    padding: 15px 80px;
+    font-size: 24px
+  }
+
+  &--order-page {
+    margin: auto;
   }
 
   &:hover {

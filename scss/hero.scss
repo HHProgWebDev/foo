@@ -5,6 +5,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10*$gutter;
+  font-family: 'Roboto Slab';
 
   &--index {
     height: 50*$gutter;
@@ -16,6 +17,23 @@
     .heading--two {
       font-size: 2.25rem;
       font-weight: normal;
+    }
+  }
+
+  &--subpage {
+    height: 20*$gutter;
+    margin-bottom: 5*$gutter;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)),
+      url('./img/bg-subpage.jpg') center center / cover fixed;
+    align-items: flex-start;
+    color: white;
+
+    h1 {
+      border: 0;
+      font-size: 48px;
+      margin-left: 0.4rem;
     }
   }
 }

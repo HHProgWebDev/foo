@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleguide.css">
   </head>
   <body>
-    <header class="header header--subpage">
+    <header class="hero hero--subpage">
       <nav class="navbar">
         <ul>
           <li><a href="./index.html">Fooþjónustan</a></li>
@@ -71,7 +71,7 @@
               <h3 class="heading heading--three">Greiðsluupplýsingar</h3>
               <p>Greiða með:</p>
               <div class="input input--select">
-                <select name="pay-method" id="pay-method" required>
+                <select class="select-pay" name="pay-method" id="pay-method" required>
                   <option>Kreditkorti</option>
                   <option>Millifærslu</option>
                   <option>Reiðufé</option>
@@ -91,7 +91,7 @@
               <p>Gildistími:</p>
               <div class="input input--select">
                 <label for="exp-month">Mán</label>
-                <select name="exp-month" id="exp-month">
+                <select class="select-time" name="exp-month" id="exp-month">
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -106,7 +106,7 @@
                   <option value="12">12</option>
                 </select>
                 <label for="exp-year">Ár</label>
-                <select name="exp-year" id="exp-year">
+                <select class="select-time" name="exp-year" id="exp-year">
                   <option value="2017">2017</option>
                   <option value="2018">2018</option>
                   <option value="2019">2019</option>
