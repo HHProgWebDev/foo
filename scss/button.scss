@@ -1,0 +1,82 @@
+.button {
+<<<<<<< HEAD
+  display: inline-block;
+
+  width: 100%;
+  max-width: 256px;
+
+  padding: 10px 5px;
+  margin: 0;
+
+  overflow: hidden;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  background-color: #666;
+
+  border: 1px solid #666;
+  border-radius: 4px;
+
+  transition: background-color 500ms ease;
+
+  &--small {
+    padding: 4px 8px;
+    display: inline;
+  }
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
+  &--inverted {
+    color: #666;
+    background-color: #eee;
+  }
+
+  &--inverted:hover {
+    color: #333;
+    background-color: #ccc;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee;
+  }
+  
+//   @include border-radius(4px);
+//   background-color: #555;
+//   color: white;
+//   border: 1px solid transparent;
+//   text-decoration: none;
+// }
+//
+// .button--small {
+//   padding: 0.8em 1em 0.8em 1em;
+//   margin: 0 auto 5em auto ;
+// }
+//
+// .button--medium {
+//   padding: 0.8em 1em 0.8em 1em;
+//   margin: 0 auto 5em auto ;
+// }
+//
+// .button--wide {
+//   padding: 0.5em 2em 0.5em 2em;
+//   margin: 0 auto 5em auto ;
+// }
+//
+// .button--order-page {
+//   padding: 0.8em 8em 0.8em 8em;
+//   margin: 0 auto 5em auto ;
+}

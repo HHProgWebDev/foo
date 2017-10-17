@@ -57,6 +57,6 @@ typings/
 # dotenv environment variables file
 .
 
-# ekki geyma "style.css" sem við
+# ekki geyma "styles.css" sem við
 # þýðum frá "styles.scss"
-style.css
+styles.css

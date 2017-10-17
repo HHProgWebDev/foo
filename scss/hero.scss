@@ -1,0 +1,21 @@
+.hero {
+  height: 30*$gutter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10*$gutter;
+
+  &--index {
+    height: 50*$gutter;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)),
+      url('./img/bg.jpg') center center / cover fixed;
+
+    .heading--two {
+      font-size: 2.25rem;
+      font-weight: normal;
+    }
+  }
+}
