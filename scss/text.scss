@@ -1,0 +1,22 @@
+.text {
+  margin-bottom: 1rem;
+
+  &--quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    float: right;
+    width: 45%;
+    margin: 2rem 0 2rem 5rem;
+
+    blockquote {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+
+    }
+  }
+}
