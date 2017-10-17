@@ -1,0 +1,36 @@
+.reviews {
+  padding-top: 10*$gutter;
+  padding-bottom: 5*$gutter;
+  display: flex;
+
+  .review {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      align-self: center;
+      margin: 2rem;
+      border-radius: 50%;
+      height: 80%;
+      width: 80%;
+    }
+
+    &__quote {
+      align-self: center;
+      flex-wrap: wrap;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &__name {
+      align-self: center;
+      font-weight: bold;
+    }
+
+    &__sublength {
+      align-self: center;
+      font-size: 0.8rem;
+    }
+  }
+}
