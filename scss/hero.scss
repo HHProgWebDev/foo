@@ -7,6 +7,10 @@
   margin-bottom: 10*$gutter;
   font-family: 'Roboto Slab';
 
+  li + li {
+    font-family: 'Open Sans';
+  }
+
   &--index {
     height: 50*$gutter;
     background:
