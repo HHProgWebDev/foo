@@ -7,6 +7,13 @@
 $max-width: 1200px;
 $gutter: 20px;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
@@ -24,8 +31,8 @@ html { /* stylelint-disable-line */
   // til þess að texti liggi ekki upp við brún á viewport þegar
   // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
   // ruglar líka ekki í grid overlay
-  margin-right: $gutter;
-  margin-left: $gutter;
+  margin-right: 0;
+  margin-left: 0;
 
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
@@ -47,6 +54,9 @@ main, footer { /* stylelint-disable-line */
 
 a {
   text-decoration: none;
+
+body {
+  margin: 0;
 }
 
 @import "scss/button";
@@ -58,3 +68,5 @@ a {
 @import "scss/text";
 @import "scss/nav";
 @import "scss/hero"
+@import "scss/input";
+@import "scss/footer";
