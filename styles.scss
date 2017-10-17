@@ -54,6 +54,7 @@ main, footer { /* stylelint-disable-line */
 
 a {
   text-decoration: none;
+}
 
 body {
   margin: 0;
@@ -67,6 +68,6 @@ body {
 @import "scss/review";
 @import "scss/text";
 @import "scss/nav";
-@import "scss/hero"
+@import "scss/hero";
 @import "scss/input";
 @import "scss/footer";
