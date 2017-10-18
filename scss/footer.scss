@@ -1,13 +1,17 @@
 footer {
   background-color: #333;
   color: #fff;
-  bottom: 0;
-  width: 100%;
-  background: cover;
+  overflow: hidden;
+
+  p {
+    text-align: center;
+    font-size: 0.875rem;
+  }
 
   .copyright {
+    font-size: 0.75rem;
     text-align: center;
-    padding-bottom: 1.5rem;
+    padding: 1rem 0;
     color: #aaa;
   }
 }

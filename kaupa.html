@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleguide.css">
   </head>
   <body>
-    <header class="hero hero--subpage">
+    <header>
       <nav class="navbar">
         <ul>
           <li><a href="./index.html">Fooþjónustan</a></li>
@@ -17,104 +17,110 @@
           <li><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
         </ul>
       </nav>
-      <h1>Kaupa</h1>
+      <div class="hero hero--subpage">
+        <h1 class="heading heading--one">Kaupa</h1>
+      </div>
     </header>
     <main>
       <section>
         <form class="form">
           <div class="row">
             <div class="col col-4 offset-1">
-              <h3 class="heading heading--three">Persónuupplýsingar</h3>
-              <div class="input input--text">
-                <label for="nafn">Nafn:</label>
-                <input type="text" name="nafn" id="nafn" required>
-              </div>
-              <div class="input input--text">
-                <label for="kennit">Kennitala:</label>
-                <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
-                  id="kennit" required autofocus placeholder="123456-7890">
-              </div>
-              <div>
-                <p>Kyn:</p>
-                <div class="input input--radio">
-                  <input type="radio" id="kynF" name="kyn" value="F">
-                  <label for="kynF">Kona</label>
+              <fieldset>
+                <legend>Persónuupplýsingar</legend>
+                <div class="input input--text">
+                  <label for="nafn">Nafn:</label>
+                  <input type="text" name="nafn" id="nafn" required>
                 </div>
-                <div class="input input--radio">
-                  <input type="radio" id="kynM" name="kyn" value="M">
-                  <label for="kynM">Karl</label>
+                <div class="input input--text">
+                  <label for="kennit">Kennitala:</label>
+                  <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
+                    id="kennit" required autofocus placeholder="123456-7890">
                 </div>
-                <div class="input input--radio">
-                  <input type="radio" id="kynA" name="kyn" value="A">
-                  <label for="kynA">Annað</label>
+                <div class="input input--radioset">
+                  <p>Kyn:</p>
+                  <div class="input input--radio">
+                    <input type="radio" id="kynF" name="kyn" value="F">
+                    <label for="kynF">Kona</label>
+                  </div>
+                  <div class="input input--radio">
+                    <input type="radio" id="kynM" name="kyn" value="M">
+                    <label for="kynM">Karl</label>
+                  </div>
+                  <div class="input input--radio">
+                    <input type="radio" id="kynA" name="kyn" value="A">
+                    <label for="kynA">Annað</label>
+                  </div>
                 </div>
-              </div>
-              <div class="input input--text">
-                <label for="simi">Sími:</label>
-                <!-- laga pattern-->
-                <input type="text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
-                  id="simi" autofocus placeholder="+354 812 3456">
-              </div>
-              <div class="input input--text">
-                <label for="heimfang">Heimilisfang:</label>
-                <input type="text" name="heimfang" id="heimfang">
-              </div>
-              <div class="input input--checkbox">
-                <label>
-                <input type="checkbox" name="postlisti" checked> Skrá mig á
-                  póstlista
-                </label>
-              </div>
+                <div class="input input--text">
+                  <label for="simi">Sími:</label>
+                  <!-- laga pattern-->
+                  <input type="text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
+                    id="simi" autofocus placeholder="+354 812 3456">
+                </div>
+                <div class="input input--text">
+                  <label for="heimfang">Heimilisfang:</label>
+                  <input type="text" name="heimfang" id="heimfang">
+                </div>
+                <div class="input input--checkbox">
+                  <label>
+                  <input type="checkbox" name="postlisti" checked> Skrá mig á
+                    póstlista
+                  </label>
+                </div>
+              </fieldset>
             </div>
 
-            <div class="col col-4 offset-1">
-              <h3 class="heading heading--three">Greiðsluupplýsingar</h3>
-              <p>Greiða með:</p>
-              <div class="input input--select">
-                <select class="select-pay" name="pay-method" id="pay-method" required>
-                  <option>Kreditkorti</option>
-                  <option>Millifærslu</option>
-                  <option>Reiðufé</option>
-                </select>
-              </div>
-              <div class="input input--text">
-                <label for="card-name">Nafn á korti:</label>
-                <input type="text" name="card-name" id="card-name" required>
-              </div>
-              <div class="input input--text">
-                <label for="card-number">Kortanúmer:</label>
-                <!-- laga pattern-->
-                <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}"
-                  name="card-number" id="card-number" required
-                  autofocus placeholder="5999-9999-9999-9999">
-              </div>
-              <p>Gildistími:</p>
-              <div class="input input--select">
-                <label for="exp-month">Mán</label>
-                <select class="select-time" name="exp-month" id="exp-month">
-                  <option value="01">01</option>
-                  <option value="02">02</option>
-                  <option value="03">03</option>
-                  <option value="04">04</option>
-                  <option value="05">05</option>
-                  <option value="06">06</option>
-                  <option value="07">07</option>
-                  <option value="08">08</option>
-                  <option value="09">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-                <label for="exp-year">Ár</label>
-                <select class="select-time" name="exp-year" id="exp-year">
-                  <option value="2017">2017</option>
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                </select>
-              </div>
+            <div class="col col-4 offset-2">
+              <fieldset>
+                <legend>Greiðsluupplýsingar</legend>
+                <div class="input">
+                  <label for="pay-method">Greiða með:</label>
+                  <select class="select-pay" name="pay-method" id="pay-method" required>
+                    <option>Kreditkorti</option>
+                    <option>Millifærslu</option>
+                    <option>Reiðufé</option>
+                  </select>
+                </div>
+                <div class="input input--text">
+                  <label for="card-name">Nafn á korti:</label>
+                  <input type="text" name="card-name" id="card-name" required>
+                </div>
+                <div class="input input--text">
+                  <label for="card-number">Kortanúmer:</label>
+                  <!-- laga pattern-->
+                  <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}"
+                    name="card-number" id="card-number" required
+                    autofocus placeholder="5999-9999-9999-9999">
+                </div>
+                <p>Gildistími:</p>
+                <div class="input input--select">
+                  <label for="exp-month">Mán</label>
+                  <select class="select-time" name="exp-month" id="exp-month">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <label for="exp-year">Ár</label>
+                  <select class="select-time" name="exp-year" id="exp-year">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+              </fieldset>
             </div>
           </div>
           <div class="row">
@@ -126,19 +132,17 @@
     <footer>
       <div class="row">
         <div class="col col-3 offset-3">
-          Fooþjónustan
-          123-4567
+          <p>Fooþjónustan</p>
+          <p>123-4567</p>
         </div>
         <div class="col col-3">
-          Opið 12-13 alla daga
-          Bargata 1
-          900 Foobar
+          <p>Opið 12-13 alla daga</p>
+          <p>Bargata 1</p>
+          <p>900 Foobar</p>
         </div>
       </div>
       <hr>
-      <div>
-        <p class="copyright">© Fooþjónustan 2017</p>
-      </div>
+      <p class="copyright">© Fooþjónustan 2017</p>
     </footer>
   </body>
 </html>

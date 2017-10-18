@@ -6,11 +6,7 @@
   flex-direction: column;
   margin-bottom: 10*$gutter;
   font-family: 'Roboto Slab';
-
-  li + li {
-    font-family: 'Open Sans';
-  }
-
+  
   &--index {
     height: 50*$gutter;
     background:
@@ -30,11 +26,11 @@
     background:
       linear-gradient(rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)),
-      url('./img/bg-subpage.jpg') center center / cover fixed;
+      url('./img/bg-subpage.jpg') center center / cover;
     align-items: flex-start;
     color: white;
 
-    h1 {
+    .heading--one {
       border: 0;
       font-size: 48px;
       margin-left: 0.4rem;

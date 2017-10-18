@@ -14,6 +14,10 @@
     }
   }
 
+  &--radioset {
+    margin-bottom: 1em;
+  }
+
   &--radio {
     display: block;
     position: relative;
@@ -58,10 +62,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    .select-pay {
-      width: 100%;
-    }
 
     .select-time {
       width: 30%;
