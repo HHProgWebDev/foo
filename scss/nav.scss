@@ -31,5 +31,11 @@ nav {
           color: #ffffff;
       }
     }
+
+    li:last-child {
+      @media (max-width: $small-max-width) {
+        display: none;
+      }
+    }
   }
 }

@@ -3,6 +3,7 @@
   padding-bottom: 5*$gutter;
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
 
   .review {
     display: flex;
@@ -10,13 +11,14 @@
 
     &__img {
       align-self: center;
-      margin: 2rem;
+      margin: 2rem 2rem 1rem;
       border-radius: 50%;
-      height: 80%;
       width: 80%;
     }
 
     &__quote {
+      margin-top: auto;
+      padding-bottom: 1rem;
       text-align: center;
       flex-wrap: wrap;
       font-style: italic;
@@ -27,6 +29,7 @@
     &__name {
       align-self: center;
       font-weight: bold;
+      margin-top: auto;
     }
 
     &__sublength {

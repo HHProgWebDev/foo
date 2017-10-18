@@ -7,7 +7,7 @@
    1200px hámarksbreidd
 */
 :root {
-  --offset: 0;
+  --offset: 20px;
   --max_width: 1200px;
   --columns: 12;
   --gutter: 20px;

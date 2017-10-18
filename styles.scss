@@ -2,14 +2,9 @@
 
 // breytur fyrir mikið notaðar stærðir
 $max-width: 1200px;
+$medium-max-width: 599px;
+$small-max-width: 399px;
 $gutter: 20px;
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
 
 /* setjum box-sizing: border-box; á allt */
 html {
@@ -25,11 +20,6 @@ html {
   margin: 0; }
 
 html { /* stylelint-disable-line */
-  // til þess að texti liggi ekki upp við brún á viewport þegar
-  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
-  // ruglar líka ekki í grid overlay
-  margin-right: 0;
-  margin-left: 0;
 
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
@@ -43,6 +33,11 @@ html { /* stylelint-disable-line */
 main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
+
+  @media (max-width: $max-width) {
+    margin-left: $gutter;
+    margin-right: $gutter;
+  }
 
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku

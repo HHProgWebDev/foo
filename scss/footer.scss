@@ -2,10 +2,21 @@ footer {
   background-color: #333;
   color: #fff;
   overflow: hidden;
+  margin-top: 5*$gutter;
+  padding-top: 1.5rem;
 
   p {
     text-align: center;
     font-size: 0.875rem;
+  }
+
+  hr {
+    margin-left: $gutter;
+    margin-right: $gutter;
+  }
+
+  .row {
+    margin-bottom: 2rem;
   }
 
   .copyright {

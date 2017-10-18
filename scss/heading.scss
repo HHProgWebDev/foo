@@ -1,5 +1,6 @@
 .heading {
   font-family: 'Roboto Slab', sans-serif;
+  overflow-wrap: break-word;
 
   &--one {
     font-size: 4.5rem;
@@ -12,5 +13,9 @@
   &--three {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  &--centered {
+    text-align: center;
   }
 }

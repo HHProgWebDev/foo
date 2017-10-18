@@ -6,7 +6,7 @@
   flex-direction: column;
   margin-bottom: 10*$gutter;
   font-family: 'Roboto Slab';
-  
+
   &--index {
     height: 50*$gutter;
     background:
@@ -14,9 +14,26 @@
         rgba(255, 255, 255, 0.2)),
       url('./img/bg.jpg') center center / cover fixed;
 
+    @media (max-width: $small-max-width) {
+      background-position: top left;
+      height: 25*$gutter;
+    }
+
+    .heading--one {
+      margin-bottom: 4rem;
+
+      @media (max-width: $small-max-width) {
+        font-size: 3rem;
+      }
+    }
+
     .heading--two {
       font-size: 2.25rem;
       font-weight: normal;
+
+      @media (max-width: $small-max-width) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -27,13 +44,17 @@
       linear-gradient(rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)),
       url('./img/bg-subpage.jpg') center center / cover;
-    align-items: flex-start;
+    align-items: stretch;
     color: white;
+
+    @media (max-width: $small-max-width) {
+      background-position: top left;
+    }
 
     .heading--one {
       border: 0;
-      font-size: 48px;
-      margin-left: 0.4rem;
+      font-size: 3.75rem;
+      margin-left: 1.5rem;
     }
   }
 }

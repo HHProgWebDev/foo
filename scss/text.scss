@@ -2,16 +2,23 @@
   margin-bottom: 1rem;
 
   &--quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     float: right;
     width: 50%;
     margin: 2rem 0 4rem 8rem;
 
+    @media (max-width: $medium-max-width) {
+      margin: 2rem 0 2rem 4rem;
+    }
+
+    @media (max-width: $small-max-width) {
+      margin: 2rem 2rem;
+      float: none;
+      width: auto;
+    }
+
     blockquote {
-      font-size: 24px;
+      font-style: italic;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
   }
