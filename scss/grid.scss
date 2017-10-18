@@ -82,8 +82,60 @@
     @include columns(12);
   }
 
-  &-sm {
+  &-md {
     @media (max-width: 599px) {
+      &-1 {
+        @include columns(1);
+      }
+
+      &-2 {
+        @include columns(2);
+      }
+
+      &-3 {
+        @include columns(3);
+      }
+
+      &-4 {
+        @include columns(4);
+      }
+
+      &-5 {
+        @include columns(5);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-7 {
+        @include columns(7);
+      }
+
+      &-8 {
+        @include columns(8);
+      }
+
+      &-9 {
+        @include columns(9);
+      }
+
+      &-10 {
+        @include columns(10);
+      }
+
+      &-11 {
+        @include columns(11);
+      }
+
+      &-12 {
+        @include columns(12);
+      }
+    }
+  }
+
+  &-sm {
+    @media (max-width: 399px) {
       &-1 {
         @include columns(1);
       }

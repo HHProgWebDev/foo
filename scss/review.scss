@@ -2,6 +2,7 @@
   padding-top: 7*$gutter;
   padding-bottom: 5*$gutter;
   display: flex;
+  justify-content: space-around;
 
   .review {
     display: flex;
