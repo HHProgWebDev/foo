@@ -11,10 +11,10 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul>
-          <li><a href="./index.html">Fooþjónustan</a></li>
-          <li><a href="./um.html">Um</a></li>
-          <li><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="./index.html" class="link">Fooþjónustan</a></li>
+          <li class="navbar__item"><a href="./um.html" class="link">Um</a></li>
+          <li class="navbar__item"><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
         </ul>
       </nav>
       <div class="hero hero--subpage">
@@ -26,77 +26,77 @@
         <form class="form">
           <div class="row">
             <div class="col col-4 offset-1 col-md-6 offset-md-0 col-sm-12">
-              <fieldset>
-                <legend>Persónuupplýsingar</legend>
-                <div class="input input--text">
-                  <label for="nafn">Nafn:</label>
-                  <input type="text" name="nafn" id="nafn" required>
+              <fieldset class="fieldset">
+                <legend class="legend">Persónuupplýsingar</legend>
+                <div class="input">
+                  <label class="label" for="nafn">Nafn:</label>
+                  <input type="text" class="input--text" name="nafn" id="nafn" required>
                 </div>
-                <div class="input input--text">
-                  <label for="kennit">Kennitala:</label>
-                  <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
-                    id="kennit" required placeholder="123456-7890">
+                <div class="input">
+                  <label class="label" for="kennit">Kennitala:</label>
+                  <input type="text" class="input--text" pattern="[0-9]{6}-[0-9]{4}" name="kennit"
+                    id="kennit" required autofocus placeholder="123456-7890">
                 </div>
                 <div class="input input--radioset">
                   <p>Kyn:</p>
                   <div class="input input--radio">
                     <input type="radio" id="kynF" name="kyn" value="F">
-                    <label for="kynF">Kona</label>
+                    <label class="label" for="kynF">Kona</label>
                   </div>
                   <div class="input input--radio">
                     <input type="radio" id="kynM" name="kyn" value="M">
-                    <label for="kynM">Karl</label>
+                    <label class="label" for="kynM">Karl</label>
                   </div>
                   <div class="input input--radio">
                     <input type="radio" id="kynA" name="kyn" value="A">
-                    <label for="kynA">Annað</label>
+                    <label class="label" for="kynA">Annað</label>
                   </div>
                 </div>
-                <div class="input input--text">
-                  <label for="simi">Sími:</label>
+                <div class="input">
+                  <label class="label" for="simi">Sími:</label>
                   <!-- laga pattern-->
-                  <input type="text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
+                  <input type="text" class="input--text" pattern="+[0-9]{3}\s[0-9]{3}\s[0-9]{4}" name="simi"
                     id="simi" autofocus placeholder="+354 812 3456">
                 </div>
-                <div class="input input--text">
-                  <label for="heimfang">Heimilisfang:</label>
-                  <input type="text" name="heimfang" id="heimfang">
+                <div class="input">
+                  <label class="label" for="heimfang">Heimilisfang:</label>
+                  <input type="text" class="input--text" name="heimfang" id="heimfang">
                 </div>
                 <div class="input input--checkbox">
-                  <label>
-                  <input type="checkbox" name="postlisti" checked>
-                  Skrá mig á póstlista
+                  <label class="label">
+                  <input type="checkbox" name="postlisti" checked> Skrá mig á
+                    póstlista
                   </label>
                 </div>
               </fieldset>
             </div>
 
             <div class="col col-4 offset-2 col-md-6 offset-md-0 col-sm-12">
-              <fieldset>
-                <legend>Greiðsluupplýsingar</legend>
+              <fieldset class="fieldset">
+                <legend class="legend">Greiðsluupplýsingar</legend>
                 <div class="input">
-                  <label for="pay-method">Greiða með:</label>
-                  <select class="select-pay" name="pay-method" id="pay-method" required>
+                  <label class="label" for="pay-method">Greiða með:</label>
+                  <select class="select" name="pay-method" id="pay-method" required>
                     <option>Kreditkorti</option>
                     <option>Millifærslu</option>
                     <option>Reiðufé</option>
                   </select>
                 </div>
-                <div class="input input--text">
-                  <label for="card-name">Nafn á korti:</label>
-                  <input type="text" name="card-name" id="card-name" required>
+                <div class="input">
+                  <label class="label" for="card-name">Nafn á korti:</label>
+                  <input type="text" class="input--text" name="card-name" id="card-name" required>
                 </div>
-                <div class="input input--text">
-                  <label for="card-number">Kortanúmer:</label>
+                <div class="input">
+                  <label class="label" for="card-number">Kortanúmer:</label>
                   <!-- laga pattern-->
-                  <input type="text" pattern="([0-9]{4}-){3}[0-9]{4}"
+                  <input type="text" class="input--text" pattern="([0-9]{4}-){3}[0-9]{4}"
                     name="card-number" id="card-number" required
                     autofocus placeholder="5999-9999-9999-9999">
                 </div>
                 <p>Gildistími:</p>
                 <div class="input input--select">
-                  <label for="exp-month">Mán</label>
-                  <select class="select-time" name="exp-month" id="exp-month">
+                  <label class="label" for="exp-month">Mán</label>
+                  <select class="select" name="exp-month" id="exp-month">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -110,8 +110,8 @@
                     <option value="11">11</option>
                     <option value="12">12</option>
                   </select>
-                  <label for="exp-year">Ár</label>
-                  <select class="select-time" name="exp-year" id="exp-year">
+                  <label class="label" for="exp-year">Ár</label>
+                  <select class="select" name="exp-year" id="exp-year">
                     <option value="2017">2017</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -129,20 +129,20 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="row">
         <div class="col col-3 offset-3 col-sm-6 offset-sm-0">
-          <p>Fooþjónustan</p>
-          <p>123-4567</p>
+          <p class="footer__text">Fooþjónustan</p>
+          <p class="footer__text">123-4567</p>
         </div>
         <div class="col col-3 col-sm-6">
-          <p>Opið 12-13 alla daga</p>
-          <p>Bargata 1</p>
-          <p>900 Foobar</p>
+          <p class="footer__text">Opið 12-13 alla daga</p>
+          <p class="footer__text">Bargata 1</p>
+          <p class="footer__text">900 Foobar</p>
         </div>
       </div>
-      <hr>
-      <p class="copyright">© Fooþjónustan 2017</p>
+      <hr class="footer_divider">
+      <p class="footer__copyright">© Fooþjónustan 2017</p>
     </footer>
   </body>
 </html>

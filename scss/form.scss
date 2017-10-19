@@ -1,15 +1,15 @@
-form {
-  fieldset {
+.form {
+  .fieldset {
     border: 0;
   }
 
-  legend {
-    font-size: 1.3125rem;
+  .legend {
     padding-bottom: 1rem;
-    font-family: 'Roboto Slab';
+    font-family: "Roboto Slab";
+    font-size: 1.3125rem;
   }
 
-  select {
+  .select {
     display: block;
     width: 100%;
   }

@@ -1,11 +1,15 @@
 .bullets {
   display: flex;
-  flex-direction: column;
+
   height: 100%;
 
+  flex-direction: column;
+
   .bullet {
-    margin-top: 2rem;
     display: flex;
+
+    margin-top: 2rem;
+
     flex-grow: 1;
 
     &__check__img {
@@ -19,7 +23,7 @@
     }
 
     &__heading {
-      font-family: 'Roboto Slab', sans-serif;
+      font-family: "Roboto Slab", sans-serif;
       font-size: 1.5rem;
     }
   }

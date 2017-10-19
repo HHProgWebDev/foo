@@ -1,7 +1,7 @@
 .text {
   margin-bottom: 1rem;
 
-  &--quote {
+  &--quote-container {
     float: right;
     width: 50%;
     margin: 2rem 0 4rem 8rem;
@@ -11,15 +11,16 @@
     }
 
     @media (max-width: $small-max-width) {
-      margin: 2rem 2rem;
       float: none;
       width: auto;
+      margin: 2rem;
     }
 
-    blockquote {
-      font-style: italic;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+  }
+
+  &--quote {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
   }
 }

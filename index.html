@@ -11,9 +11,11 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul><li><a href="./index.html">Fooþjónustan</a></li>
-        <li><a href="./um.html">Um</a></li>
-        <li><a href="./kaupa.html" class="button button--small">Kaupa</a></li></ul>
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="./index.html" class="link">Fooþjónustan</a></li>
+          <li class="navbar__item"><a href="./um.html" class="link">Um</a></li>
+          <li class="navbar__item"><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
+        </ul>
       </nav>
       <div class="hero hero--index">
         <h2 class="heading heading--two">Í fyrsta skipti á Íslandi</h2>
@@ -50,7 +52,7 @@
             </div>
           </div>
           <div class="col col-6 col-md-12 col-sm-12">
-            <img src="./img/image.jpg" alt="Kaupa! Núna! Strax!" class="bulletimg">
+            <img src="./img/image.jpg" alt="Kaupa! Núna! Strax!" class="image">
           </div>
         </div>
       </section>
@@ -81,20 +83,20 @@
         <a href="./kaupa.html" class="button button--wide button--centered">Kaupa</a>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="row">
         <div class="col col-3 offset-3 col-sm-6 offset-sm-0">
-          <p>Fooþjónustan</p>
-          <p>123-4567</p>
+          <p class="footer__text">Fooþjónustan</p>
+          <p class="footer__text">123-4567</p>
         </div>
         <div class="col col-3 col-sm-6">
-          <p>Opið 12-13 alla daga</p>
-          <p>Bargata 1</p>
-          <p>900 Foobar</p>
+          <p class="footer__text">Opið 12-13 alla daga</p>
+          <p class="footer__text">Bargata 1</p>
+          <p class="footer__text">900 Foobar</p>
         </div>
       </div>
-      <hr>
-      <p class="copyright">© Fooþjónustan 2017</p>
+      <hr class="footer__divider">
+      <p class="footer__copyright">© Fooþjónustan 2017</p>
     </footer>
   </body>
 </html>

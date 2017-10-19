@@ -6,23 +6,23 @@ $medium-max-width: 599px;
 $small-max-width: 399px;
 $gutter: 20px;
 
-/* setjum box-sizing: border-box; á allt */
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   /* stylelint-disable-line */
   box-sizing: inherit;
+
   /* fjarlægjum margin og padding */
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 html { /* stylelint-disable-line */
+  box-sizing: border-box;
 
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
+
   line-height: 1.5;
 
   @media (min-width: $max-width) {
@@ -35,8 +35,8 @@ main { /* stylelint-disable-line */
   margin: 0 auto;
 
   @media (max-width: $max-width) {
-    margin-left: $gutter;
     margin-right: $gutter;
+    margin-left: $gutter;
   }
 
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
@@ -44,12 +44,8 @@ main { /* stylelint-disable-line */
   overflow: hidden;
 }
 
-a {
+.link {
   text-decoration: none;
-}
-
-body {
-  margin: 0;
 }
 
 @import "scss/button";

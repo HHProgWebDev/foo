@@ -1,28 +1,30 @@
-footer {
-  background-color: #333;
-  color: #fff;
-  overflow: hidden;
-  margin-top: 5*$gutter;
+.footer {
   padding-top: 1.5rem;
+  margin-top: 5*$gutter;
 
-  p {
-    text-align: center;
+  overflow: hidden;
+
+  color: #fff;
+  background-color: #333;
+
+  &__text {
     font-size: 0.875rem;
+    text-align: center;
   }
 
-  hr {
-    margin-left: $gutter;
+  &__divider {
     margin-right: $gutter;
+    margin-left: $gutter;
   }
 
   .row {
     margin-bottom: 2rem;
   }
 
-  .copyright {
-    font-size: 0.75rem;
-    text-align: center;
+  &__copyright {
     padding: 1rem 0;
+    font-size: 0.75rem;
     color: #aaa;
+    text-align: center;
   }
 }

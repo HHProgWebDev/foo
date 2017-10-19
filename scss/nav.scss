@@ -1,41 +1,45 @@
-nav {
-  background-color: rgba(0, 0, 0, 0.8);
+.navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  padding: 0.5rem;
   z-index: 1;
 
-  ul {
+  padding: 0.5rem;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &__list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     align-items: center;
+  }
 
-    li:first-child {
-      margin-right: auto;
-      margin-left: 0;
+  &__item:first-child {
+    margin-right: auto;
+    margin-left: 0;
 
-      a {
-        font-family: 'Roboto Slab';
-        font-weight: bold;
-        font-size: 1.3125rem;
-      }
+    .link,
+    .button {
+      font-family: "Roboto Slab";
+      font-size: 1.3125rem;
+      font-weight: bold;
     }
+  }
 
-    li {
-      margin-left: 1rem;
+  &__item {
+    margin-left: 1rem;
 
-      a {
-          color: #ffffff;
-      }
+    .link,
+    .button {
+      color: #fff;
     }
+  }
 
-    li:last-child {
-      @media (max-width: $small-max-width) {
-        display: none;
-      }
+  &__item:last-child {
+    @media (max-width: $small-max-width) {
+      display: none;
     }
   }
 }

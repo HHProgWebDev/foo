@@ -22,8 +22,8 @@
           <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus felis at lorem rutrum, ac ultricies nibh vulputate. Duis eget sem aliquet, fringilla odio in, congue arcu. Proin libero nibh, ornare nec mauris at, commodo congue enim. Praesent feugiat varius turpis semper molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In a lobortis ex, vel fringilla lorem. Etiam vitae scelerisque risus, sed sagittis ipsum. Praesent volutpat mollis tincidunt. Etiam congue lectus sagittis facilisis malesuada. Vivamus mollis, libero nec finibus dictum, dolor ipsum feugiat nisi, id volutpat nisl erat quis ante. Fusce facilisis libero felis, id faucibus ligula faucibus at. Donec dignissim eros sit amet elit viverra consequat. Etiam porta consequat risus, nec pretium ligula dictum eu.
           </p>
-            <div class="text text--quote">
-              <blockquote>Praesent pharetra blandit semper. Cras eget finibus ex. Sed mi purus, varius eu vestibulum luctus, luctus nec lacus. Sed a scelerisque turpis. Aliquam dignissim gravida orci. Donec varius risus vitae vehicula cursus. Maecenas leo ligula, gravida non sapien vel, placerat.</blockquote>
+            <div class="text text--quote-container">
+              <blockquote class="text--quote">Praesent pharetra blandit semper. Cras eget finibus ex. Sed mi purus, varius eu vestibulum luctus, luctus nec lacus. Sed a scelerisque turpis. Aliquam dignissim gravida orci. Donec varius risus vitae vehicula cursus. Maecenas leo ligula, gravida non sapien vel, placerat.</blockquote>
               <p>- Dignissim Nisi</p>
             </div>
           <p class="text">
@@ -121,41 +121,41 @@
       <section>
         <h2 class="heading heading--two heading--styleguide">Form</h2>
         <form class="form">
-        <fieldset>
-          <legend>Einhverjar upplýsingar</legend>
-          <div class="input input--text">
-            <label for="uppl">Innsláttarkassi:</label>
-            <input type="text" name="nafn" id="uppl">
-          </div>
-          <div class="input input--text">
-            <label for="naudsyn">Og annar:</label>
-            <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="naudsyn"
-              id="naudsyn" required placeholder="Nauðsynlegt að fylla út">
-          </div>
-          <div class="input input--radioset">
-            <p>Flottir radiotakkar?</p>
-            <div class="input input--radio">
-              <input type="radio" id="kynF" name="kyn" value="F">
-              <label for="kynF">Já</label>
+          <fieldset class="fieldset">
+            <legend class="legend">Einhverjar upplýsingar</legend>
+            <div class="input">
+              <label class="label" for="uppl">Innsláttarkassi:</label>
+              <input type="text" class="input--text" name="nafn" id="uppl">
             </div>
-            <div class="input input--radio">
-              <input type="radio" id="kynM" name="kyn" value="M">
-              <label for="kynM">Nei</label>
+            <div class="input">
+              <label class="label" for="naudsyn">Og annar:</label>
+              <input type="text" pattern="[0-9]{6}-[0-9]{4}" name="naudsyn"
+                id="naudsyn" required placeholder="Nauðsynlegt að fylla út">
             </div>
-          </div>
+            <div class="input input--radioset">
+              <p>Flottir radiotakkar?</p>
+              <div class="input input--radio">
+                <input type="radio" id="kynF" name="kyn" value="F">
+                <label class="label" for="kynF">Já</label>
+              </div>
+              <div class="input input--radio">
+                <input type="radio" id="kynM" name="kyn" value="M">
+                <label class="label" for="kynM">Nei</label>
+              </div>
+            </div>
             <div class="input input--checkbox">
-              <label>
+              <label class="label">
               <input type="checkbox" name="sorglegt" checked> Tékkað tékkbox
               </label>
             </div>
             <div class="input input--checkbox">
-              <label>
+              <label class="label">
               <input type="checkbox" name="sad"> Ótékkað tékkbox
               </label>
             </div>
             <div class="input">
-              <label for="pay-method">Fellivalmynd:</label>
-              <select class="select-pay" name="pay-method" id="pay-method" required>
+              <label class="label" for="pay-method">Fellivalmynd:</label>
+              <select class="select" name="pay-method" id="pay-method" required>
                 <option>Valið</option>
                 <option>Stendur</option>
                 <option>Á</option>
@@ -163,9 +163,8 @@
                 <option>Þessara</option>
               </select>
             </div>
-        </fieldset>
-      </form>
-
+          </fieldset>
+        </form>
       </section>
     </main>
   </body>

@@ -11,10 +11,10 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul>
-          <li><a href="./index.html">Fooþjónustan</a></li>
-          <li><a href="./um.html">Um</a></li>
-          <li><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="./index.html" class="link">Fooþjónustan</a></li>
+          <li class="navbar__item"><a href="./um.html" class="link">Um</a></li>
+          <li class="navbar__item"><a href="./kaupa.html" class="button button--small">Kaupa</a></li>
         </ul>
       </nav>
       <div class="hero hero--subpage">
@@ -30,8 +30,8 @@
         <p class="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius lorem sit amet diam faucibus, et lacinia metus tempus. Nam vulputate erat non aliquet ultrices. Curabitur at ligula sit amet purus dictum tempor. Morbi ultrices suscipit mi vehicula viverra. Sed sit amet quam luctus tortor elementum iaculis. Sed pellentesque vel magna in condimentum. Pellentesque mollis, ante quis tristique rutrum, arcu elit fermentum enim, non rhoncus lacus lorem sagittis dolor. Suspendisse bibendum sapien rutrum lorem rutrum eleifend. Ut interdum feugiat magna, ac lacinia orci gravida eget. Ut egestas, nulla aliquam commodo gravida, enim nisl congue lectus, eu maximus tortor neque at velit. Praesent nec nunc purus. Duis lacus quam, aliquet et nulla sed, vestibulum interdum leo. Curabitur id ante et risus dictum maximus. Proin quis ligula tristique, hendrerit felis vel, ultrices tortor. Proin mattis lacus id aliquam maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel metus risus.
         </p>
-        <div class="text text--quote">
-          <blockquote>
+        <div class="text text--quote-container">
+          <blockquote class="text--quote">
             „Aenean in purus vel leo pellentesque lacinia non ut magna. Sed eleifend tristique mollis.“
           </blockquote>
           <p>
@@ -46,20 +46,20 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="row">
         <div class="col col-3 offset-3 col-sm-6 offset-sm-0">
-          <p>Fooþjónustan</p>
-          <p>123-4567</p>
+          <p class="footer__text">Fooþjónustan</p>
+          <p class="footer__text">123-4567</p>
         </div>
         <div class="col col-3 col-sm-6">
-          <p>Opið 12-13 alla daga</p>
-          <p>Bargata 1</p>
-          <p>900 Foobar</p>
+          <p class="footer__text">Opið 12-13 alla daga</p>
+          <p class="footer__text">Bargata 1</p>
+          <p class="footer__text">900 Foobar</p>
         </div>
       </div>
-      <hr>
-      <p class="copyright">© Fooþjónustan 2017</p>
+      <hr class="footer_divider">
+      <p class="footer__copyright">© Fooþjónustan 2017</p>
     </footer>
   </body>
 </html>

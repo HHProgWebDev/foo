@@ -14,26 +14,34 @@
   to { opacity: 1; }
 }
 
+@keyframes fadeb {
+  from { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .hero {
-  height: 30*$gutter;
   display: flex;
+
+  height: 30*$gutter;
+  margin-bottom: 10*$gutter;
+
+  font-family: "Roboto Slab";
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 10*$gutter;
-  font-family: 'Roboto Slab';
 
   &--index {
     height: 50*$gutter;
-    background:
-      linear-gradient(rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2)),
-      url('./img/bg.jpg') center center / cover fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("./img/bg.jpg") center center / cover fixed;
 
     @media (max-width: $small-max-width) {
-      background-position: top left;
       height: 25*$gutter;
       margin-bottom: 3*$gutter;
+      background-position: top left;
     }
 
     .heading--one {
@@ -59,21 +67,22 @@
   &--subpage {
     height: 20*$gutter;
     margin-bottom: 5*$gutter;
-    background:
-      linear-gradient(rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2)),
-      url('./img/bg-subpage.jpg') center center / cover;
+    color: #fff;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("./img/bg-subpage.jpg") center center / cover;
     align-items: stretch;
-    color: white;
 
     @media (max-width: $small-max-width) {
       background-position: top left;
     }
 
     .heading--one {
-      border: 0;
-      font-size: 3.75rem;
       margin-left: 1.5rem;
+      font-size: 3.75rem;
+      border: 0;
     }
+  }
+
+  .button--medium {
+    animation: 4s fadeb ease-in;
   }
 }
