@@ -6,30 +6,6 @@ $medium-max-width: 599px;
 $small-max-width: 399px;
 $gutter: 20px;
 
-@keyframes fade1 {
-  from { opacity: 0; }
-  25% { opacity: 0; }
-  50% { opacity: 0.3; }
-  75% { opacity: 0.7; }
-  to { opacity: 1; }
-}
-
-@keyframes fade2 {
-  from { opacity: 0; }
-  25% { opacity: 0.2; }
-  50% { opacity: 0.4; }
-  75% { opacity: 0.75; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeb {
-  from { opacity: 0; }
-  25% { opacity: 0; }
-  50% { opacity: 0; }
-  75% { opacity: 0.4; }
-  to { opacity: 1; }
-}
-
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
