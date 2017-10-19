@@ -4,12 +4,10 @@ section {
 
 h1 {
   margin-bottom: 30px;
-  border-bottom: 1px solid #999;
 }
 
 h2 {
   margin-bottom: 30px;
-  border-bottom: 1px solid #999;
 }
 
 hr {
@@ -19,20 +17,14 @@ hr {
   border-bottom: 1px solid #999;
 }
 
-section > hr:last-of-type {
-  border: 0;
+.heading--styleguide {
+    border-bottom: 1px solid;
 }
 
-.sg-example {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.button {
+  margin-bottom: 1rem;
 }
 
-.sg-example > * {
-  margin: 0 7px 7px 0 !important;
-}
-
-.sg-example > *:last-child {
-  margin-right: 0;
+.form {
+  margin-bottom: 10rem;
 }
