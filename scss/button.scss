@@ -1,3 +1,11 @@
+@keyframes fadeb {
+  from { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .button {
   display: block;
 
@@ -46,6 +54,7 @@
     margin: 0;
     width: auto;
     font-size: 2.25rem;
+    animation: 4s fadeb ease-in;
 
     @media (max-width: $small-max-width) {
       font-size: 1.5rem;

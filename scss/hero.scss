@@ -1,3 +1,19 @@
+@keyframes fade1 {
+  from { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  to { opacity: 1; }
+}
+
+@keyframes fade2 {
+  from { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 1; }
+  to { opacity: 1; }
+}
+
 .hero {
   height: 30*$gutter;
   display: flex;
@@ -22,6 +38,7 @@
 
     .heading--one {
       margin-bottom: 4rem;
+      animation: 4s fade1 ease-in;
 
       @media (max-width: $small-max-width) {
         font-size: 3rem;
@@ -31,6 +48,7 @@
     .heading--two {
       font-size: 2.25rem;
       font-weight: normal;
+      animation: 4s fade2 ease-in;
 
       @media (max-width: $small-max-width) {
         font-size: 1.5rem;
