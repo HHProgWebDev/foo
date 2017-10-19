@@ -1,5 +1,5 @@
 Fooþjónustan
-#####
+====
 
 ## Keyrsla verkefnis
 Til þess að setja síðuna upp á þinni tölvu þarftu að byrja á að klóna verkefnið héðan af github og setja upp dependencies. Hér fyrir neðan, í réttri röð, eru þær skipanir sem hægt er að nota á skipanalínu til að framkvæma þetta:
@@ -19,5 +19,5 @@ Scss-inu er skipt niður í einingar eftir hlutverki þess og/eða staðsetningu
 ## Hópur
 Nemendurnir sem unnu verkefnið eru:
 
-Hannes Þór Sveinbjörnsson - hths17@hi.is
-Ragnheiður Ásta Karlsdóttir - rak4@hi.is
+- Hannes Þór Sveinbjörnsson - hths17@hi.is
+- Ragnheiður Ásta Karlsdóttir - rak4@hi.is
