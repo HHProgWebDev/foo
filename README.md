@@ -2,7 +2,7 @@ Fooþjónustan
 ====
 
 ## Keyrsla verkefnis
-Til þess að setja síðuna upp á þinni tölvu þarftu að byrja á að klóna verkefnið héðan af github og setja upp dependencies. Til þess að keyra verkefnið upp þarf að nota skipunina `npm run dev`, opna `styles.scss` skrána og vista hana einu sinni. Hér fyrir neðan, í réttri röð, eru þær skipanir sem hægt er að nota á skipanalínu til að framkvæma þetta:
+Til þess að setja síðuna upp á þinni tölvu þarftu að byrja á að klóna verkefnið héðan af github og setja upp dependencies. Til þess að keyra verkefnið upp þarf að nota skipunina `npm run dev`, opna `styles.scss` skránna og vista hana einu sinni. Hér fyrir neðan, í réttri röð, eru þær skipanir sem hægt er að nota á skipanalínu til að framkvæma þetta:
 
 ```
 git clone git@github.com:HHProgWebDev/foo.git
@@ -10,7 +10,7 @@ cd foo
 npm install
 npm run dev
 ```
-Ekki gleyma að opna `styles.scss` skrána og vista hana einu sinni.
+Ekki gleyma að opna `styles.scss` skránna og vista hana einu sinni.
 
 ## Uppsetning verkefnis
 Verkefnið samanstendur af tveimur möppum og rót.
