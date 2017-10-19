@@ -10,7 +10,7 @@ cd foo
 npm install
 npm run dev
 ```
-Ekki gleyma að opna `styles.scss` skránna og vista hana einu sinni.
+Ekki gleyma að opna `styles.scss` skránna og vista hana einu sinni. Þegar þetta hefur verið framkvæmt á verkefnið að vera uppsett og byrjað að keyra.
 
 ## Uppsetning verkefnis
 Verkefnið samanstendur af tveimur möppum og rót.

@@ -60,3 +60,4 @@ typings/
 # ekki geyma "styles.css" sem við
 # þýðum frá "styles.scss"
 styles.css
+.sass-cache
