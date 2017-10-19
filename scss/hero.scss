@@ -17,6 +17,7 @@
     @media (max-width: $small-max-width) {
       background-position: top left;
       height: 25*$gutter;
+      margin-bottom: 3*$gutter;
     }
 
     .heading--one {

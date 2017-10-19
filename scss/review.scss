@@ -5,9 +5,17 @@
   justify-content: space-around;
   align-items: stretch;
 
+  @media (max-width: $small-max-width) {
+    padding-top: 2*$gutter;
+  }
+
   .review {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $small-max-width) {
+      padding-bottom: 2*$gutter;
+    }
 
     &__img {
       align-self: center;
